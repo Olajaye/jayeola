@@ -1,0 +1,30 @@
+import React from 'react'
+import IMAGE from "@/assets/newsuite-removebg-preview.png"
+
+type Props = {}
+
+const About = (props: Props) => {
+  return (
+    <section className='bg-black mt-10 h-full'>
+      <div className='px-10 pt-10'>
+      <div className='text-center py-2'>
+        <h1 className='text-green text-3xl font-extrabold'>About Me</h1>
+      </div>
+      
+      <div className='sm:flex sm:gap-4 pt-2 items-center'>
+        <div className='basis-[50%] text-center'>
+          <h3 className='text-wrap text-white text-xl'>I'm <span className='text-green uppercase'>Jayeola Gbolahan</span>, a frontend developer with boundless enthusiasm for creating engaging user experiences. I have a never-ending need for innovation, therefore I'm constantly searching for the newest methods and tools to take projects to the next level. Every piece of code I write demonstrates my commitment to pixel-perfect design, from slick animations to fluid interactions. With an unwavering passion for excellence and an acute attention to detail, I turn concepts into captivating digital experiences that astound people. I motivated my team to aim high by my infectious excitement and limitless energy as I tackle every work, be it boosting performance or creating intuitive interfaces.</h3>
+        </div>
+
+        <div className='hidden sm:block h-[350px] w-1 bg-green border-green rounded-full'></div>
+
+        <div className='basis-[45%] grid place-content-center mt-3'>
+          <img src={IMAGE} alt="" className='w-[400px] h-[400px] object-cover object-right-top -hue-rotate-15 rounded-t-lg' />
+        </div>
+      </div>
+      </div>
+   </section>
+  ) 
+}
+
+export default About
