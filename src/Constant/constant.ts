@@ -117,11 +117,11 @@ export const Project = [
     Title: "Microsoft_Clone",
     icon: JAVASCRIPT,
     img: GITHUB,
-    Description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, rem aliquid quisquam ab sed voluptates unde modi. Neque, eaque expedita.  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores deleniti suscipit alias ex assumenda ipsum, fugiat illo quo in nobis rerum repudiandae? Odio vel quos, vero esse tempore doloribus unde non totam quam veritatis possimus magni, natus voluptates cupiditate voluptate necessitatcd",
+    Description: "The FITNESS PLACES serves as a comprehensive platform for individuals striving to improve their physical health and overall well-being. It offers unparalleled convenience by providing access to a vast array of workout routines, nutrition plans, and expert advice, all accessible from the comfort of one's home or on the go. This customization ensures that each user receives tailored guidance and support, maximizing the effectiveness of their fitness efforts. Overall, the advantages of a The Fitness Place lie in its ability to empower individuals with the resources, support, and guidance needed to achieve their health and fitness goals efficiently and effectively.",
     link: "https://olajaye.github.io/Microsoft/"
   },
   {
-    Title: "Fitness Place2",
+    Title: "Fitness Place",
     img: JAVASCRIPT,
     Description: "The FITNESS PLACES serves as a comprehensive platform for individuals striving to improve their physical health and overall well-being. It offers unparalleled convenience by providing access to a vast array of workout routines, nutrition plans, and expert advice, all accessible from the comfort of one's home or on the go. This customization ensures that each user receives tailored guidance and support, maximizing the effectiveness of their fitness efforts. Overall, the advantages of a The Fitness Place lie in its ability to empower individuals with the resources, support, and guidance needed to achieve their health and fitness goals efficiently and effectively.",
     link: "https://olajaye.github.io/Microsoft/"
