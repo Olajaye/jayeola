@@ -93,7 +93,7 @@ const Header = (props: Props) => {
           </div>
 
           <div className="w-10 h-10 sm:ms-8 rounded-lg bg-black grid place-content-center shadow-inner shadow-green">
-            <a href="#">
+            <a href="https://wa.link/rkh34e">
               <img src={WHATAPP} className="w-6 h-6" alt="" />
             </a>
           </div>
