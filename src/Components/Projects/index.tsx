@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Project } from '@/Constant/constant'
 import ProjectContent from '@/Sub-component/ProjectContent'
 import ProjectTitle from '@/Sub-component/ProjectTitle'
+import { SparklesIcon } from "@heroicons/react/24/solid"
 
 type Props = {}
 
@@ -18,13 +19,20 @@ const Projects = (props: Props) => {
   return (
     
     <section className='bg-black'>
-      <div className='px-10 py-10'>
+      <div className='px-10 py-10 '>
 
-        <div className='text-center'>
-          <h1 className='text-2xl text-green font-extrabold'>Projects</h1>
+        <div className="flex py-[6px] px-[7px] text-center justify-center">
+          <SparklesIcon className="text-[#FFD700] mr-[10px] h-5 w-5" />
+          <h1 className="text-[17px] text-green font-extrabold">
+            My Projects
+          </h1>
         </div>
 
-        <div className='mt-3'>
+        <div className='cursive text-xl text-gray-400 mb-2 text-center italic'>
+         Scroll left throught my list of projects
+        </div>
+
+        <div className='mt-1'>
           {/* Titles of projects */}
          
           <div className='overflow-x-scroll'>

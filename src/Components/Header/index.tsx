@@ -12,7 +12,7 @@ type Props = {}
 
 const Header = (props: Props) => {
   return (
-    <header className="sm:grid sm:grid-cols-2 sm:mt-10 items-center p-10">
+    <header className="sm:grid sm:grid-cols-2 sm:mt-10 items-center px-10 pt-10">
       <motion.div
         initial={{ scale: 0, rotateZ:-180 }}
         animate={{scale:1, rotateZ:0 , transition:{duration:2}}}
@@ -30,7 +30,7 @@ const Header = (props: Props) => {
         animate={{x:0 ,transition:{duration:2}}}
         className="flex flex-col gap-5 text-start ps-3">
           
-        <motion.div
+        {/* <motion.div
           variants={slideInFromRight(0.5)}
           initial="hidden"
           animate="visible"
@@ -39,17 +39,17 @@ const Header = (props: Props) => {
           <h1 className="text-[13px] text-green tracking-widest">
             Frontend Developer Portfolio 
           </h1>
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           variants={slideInFromRight(1)}
           initial="hidden"
           animate="visible"
-          className="flex flex-col gap-6 mt-4 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-6 mt-4 text-5xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
             Providing
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-100 to-cyan-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 to-green">
               {" "}
               the best{" "}
             </span>
@@ -61,7 +61,7 @@ const Header = (props: Props) => {
           variants={slideInFromRight(1.5)}
           initial="hidden"
           animate="visible"
-          className="text-lg text-gray-400 my-5 max-w-[600px]"
+          className="text-lg text-gray-400 my-5 max-w-[600px] italic"
         >
           I&apos;m Jayeola Gbolahan a Frontend Software Engineer with experience in Website,
           Mobile, and Software development. Check out my projects and skills.
@@ -76,7 +76,7 @@ const Header = (props: Props) => {
         </motion.a>
       </motion.div>
 
-      <div className="pt-4">
+      <div className="pt-8 sm:pt-0">
         <h1 className="text-green font-extrabold text-xl">FIND ME AT</h1>
 
         <div className="pt-4 grid grid-cols-4 sm:flex ">
