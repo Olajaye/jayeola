@@ -6,7 +6,7 @@ type Props = {}
  
 const Contact = (props: Props) => {
   return (
-    <section className='px-10'>
+    <section className='px-10 mt-5 pt-10 sm:pt-16' id="contact">
       <div className='py-10 grid grid-cols-1 sm:grid-cols-2'>
         <div className='p-2 flex justify-around place-content-center'>
           <ContactUs />

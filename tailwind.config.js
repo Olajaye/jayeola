@@ -8,11 +8,12 @@ export default {
     extend: {
       colors: {
         'green': '#4EFFEA',
+        'greenmenu':  "rgb(78, 255, 234, 0.8)",
         'dark': '#212429',
       },
       screens: {
         xs: "480px",
-        sm: "760px",
+        sm: "770px",
         md: "1050px",
       },
       fontFamily: {

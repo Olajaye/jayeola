@@ -18,7 +18,7 @@ const Projects = (props: Props) => {
   }
   return (
     
-    <section className='bg-black'>
+    <section className='bg-black mt-5 pt-10' id='myproject'>
       <div className='px-10 py-10 '>
 
         <div className="flex py-[6px] px-[7px] text-center justify-center">

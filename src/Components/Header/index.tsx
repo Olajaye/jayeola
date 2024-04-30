@@ -12,7 +12,8 @@ type Props = {}
 
 const Header = (props: Props) => {
   return (
-    <header className="sm:grid sm:grid-cols-2 sm:mt-10 items-center px-10 pt-10">
+    <header id="home"
+      className="sm:grid sm:grid-cols-2 items-center gap-16 px-10 pt-28 pb-10 ">
       <motion.div
         initial={{ scale: 0, rotateZ:-180 }}
         animate={{scale:1, rotateZ:0 , transition:{duration:2}}}
@@ -30,7 +31,7 @@ const Header = (props: Props) => {
         animate={{x:0 ,transition:{duration:2}}}
         className="flex flex-col gap-5 text-start ps-3">
           
-        {/* <motion.div
+        <motion.div
           variants={slideInFromRight(0.5)}
           initial="hidden"
           animate="visible"
@@ -39,7 +40,7 @@ const Header = (props: Props) => {
           <h1 className="text-[13px] text-green tracking-widest">
             Frontend Developer Portfolio 
           </h1>
-        </motion.div> */}
+        </motion.div>
 
         <motion.div
           variants={slideInFromRight(1)}

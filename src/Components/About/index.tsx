@@ -6,7 +6,7 @@ type Props = {}
 
 const About = (props: Props) => {
   return (
-    <section className='bg-black mt-5 h-full'>
+    <section className='bg-black h-full mt-5 pt-10' id='aboutme'>
       <div className='px-10'>
         <div className='pt-10'>
           <div className="flex py-[6px] px-[7px] text-center justify-center">
