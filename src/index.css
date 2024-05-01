@@ -22,3 +22,16 @@ body,
 
 }
 
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(78, 255, 234, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #212429;
+}

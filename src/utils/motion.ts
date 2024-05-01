@@ -60,5 +60,5 @@ export const ParentVariant = {
 
 export const imageVariant = {
   hidden: { scale: 0 },
-  visible: { scale: 1, transition: { duration: 1} }
+  visible: { scale: 1, transition: { duration: 0.3} }
 }

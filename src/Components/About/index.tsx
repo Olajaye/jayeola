@@ -33,7 +33,7 @@ const About = (props: Props) => {
               x: 0, opacity: 1, transition: {
               duration:2
             }}}
-            className='basis-[50%] text-center'>
+            className='basis-[50%] text-justify sm:text-center'>
             <h3 className='text-wrap text-white text-xl'>I'm <span className='text-green uppercase'>Jayeola Gbolahan</span>, a frontend developer with boundless enthusiasm for creating engaging user experiences. I have a never-ending need for innovation, therefore I'm constantly searching for the newest methods and tools to take projects to the next level. Every piece of code I write demonstrates my commitment to pixel-perfect design, from slick animations to fluid interactions. With an unwavering passion for excellence and an acute attention to detail, I turn concepts into captivating digital experiences that astound people. I motivated my team to aim high by my infectious excitement and limitless energy as I tackle every work, be it boosting performance or creating intuitive interfaces.</h3>
           </motion.div>
 

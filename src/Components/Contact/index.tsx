@@ -17,7 +17,7 @@ const Contact = (props: Props) => {
         className="flex justify-center py-[6px] px-[7px]">
         <SparklesIcon className="text-[#FFD700] mr-[10px] h-5 w-5" />
         <h1 className="text-[17px] text-green font-extrabold">
-          My Stack
+          Contact Me
         </h1>
       </motion.div>
       <div className='py-10 grid grid-cols-1 sm:grid-cols-2'>

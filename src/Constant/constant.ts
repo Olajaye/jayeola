@@ -18,9 +18,9 @@ import MATERIALUI from "@/assets/mui.png"
 import FIGMA from "@/assets/figma.png"
 import GITHUB from "@/assets/gitHub.png"
 import MICROSOFT from "@/assets/microsoft.avif"
-import FITNESSICON from "@/assets/fitnessIcon.jpg"
-import FITNESS from "@/assets/Fittness.jpg"
+import FITNESS from "@/assets/FitnessImage.png"
 import NUPAT from "@/assets/nupat.png"
+import JAYNETWORK from "@/assets/JAYNETWORK.png"
 
 
 export const Frontend_data = [
@@ -121,22 +121,29 @@ export const Project = [
     Title: "Microsoft_Clone",
     icon: MICROSOFT,
     img: MICROSOFT,
-    Description: "The FITNESS PLACES serves as a comprehensive platform for individuals striving to improve their physical health and overall well-being. It offers unparalleled convenience by providing access to a vast array of workout routines, nutrition plans, and expert advice, all accessible from the comfort of one's home or on the go. This customization ensures that each user receives tailored guidance and support, maximizing the effectiveness of their fitness efforts. Overall, the advantages of a The Fitness Place lie in its ability to empower individuals with the resources, support, and guidance needed to achieve their health and fitness goals efficiently and effectively.",
+    Description: "",
     link: "https://olajaye.github.io/Microsoft/"
+  },
+  {
+    Title: "Jaye.Network",
+    icon: JAYNETWORK,
+    img: JAYNETWORK,
+    Description: "",
+    link: "https://jayso-network.vercel.app/"
   },
   {
     Title: "Fitness Place",
     icon: FITNESS,
-    img: FITNESSICON,
+    img: FITNESS,
     Description: "The FITNESS PLACES serves as a comprehensive platform for individuals striving to improve their physical health and overall well-being. It offers unparalleled convenience by providing access to a vast array of workout routines, nutrition plans, and expert advice, all accessible from the comfort of one's home or on the go. This customization ensures that each user receives tailored guidance and support, maximizing the effectiveness of their fitness efforts. Overall, the advantages of a The Fitness Place lie in its ability to empower individuals with the resources, support, and guidance needed to achieve their health and fitness goals efficiently and effectively.",
-    link: "https://olajaye.github.io/Microsoft/"
+    link: "https://fitness-place.vercel.app/"
   },
   
   {
     Title: "NUPTE_TECNOLOGY",
     icon: NUPAT,
     img: NUPAT,
-    Description: " Academic serves as a valuable resource for students, educators, researchers, and lifelong learners alike. It offers a vast repository of educational materials, including textbooks, articles, lecture notes, and multimedia resources, which can be accessed anytime, anywhere, fostering continuous learning beyond traditional classroom settings. Moreover, academic websites often provide tools and platforms for collaboration and communication among peers and mentors. Enabling users to stay abreast of the latest developments in their fields of interest. This access to cutting-edge research fosters critical thinking, innovation, and evidence-based decision-making. Furthermore, academic may offer supplementary resources such as study guides, practice exams, and tutoring services, catering to diverse learning needs and styles. These resources support students in their academic endeavors, helping them excel in their coursework and examinations. Overall, the advantages of academic lie in its ability to democratize access to knowledge, facilitate collaboration and communication, provide access to cutting-edge research, and support diverse learning needs. By harnessing the power of technology, academic empower individuals to pursue lifelong learning and academic excellence.",
+    Description: "NUPAT Academic serves as a valuable resource for students, educators, researchers, and self thought learners. It offers a vast repository of educational materials, including textbooks, articles, lecture notes, and multimedia resources, which can be accessed anytime, anywhere, fostering continuous learning beyond traditional classroom settings. Moreover, NUPAT academic websites often provide tools and platforms for collaboration and communication among peers and mentors. Enabling users to stay abreast of the latest developments in their fields of interest. This access to cutting-edge research fosters critical thinking, innovation, and evidence-based decision-making. Furthermore, NUPAT academic also offer supplementary resources such as study guides, practice exams, and tutoring services, catering to diverse learning needs and styles. These resources support students in their academic endeavors, helping them excel in their coursework and examinations.",
     link: "https://olajaye.github.io/Tech-Academy/"
    }
 ]
