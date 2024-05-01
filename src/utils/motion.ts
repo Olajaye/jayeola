@@ -55,10 +55,10 @@ export const hiParentVariant = {
 } 
 export const ParentVariant = {
   hidden: { opacity: 0 },
-  visible:{opacity:1, transition:{ duration: 3,staggerChildren: 1, when:"beforeChildren"} }
+  visible:{opacity:1, transition:{ duration: 1,staggerChildren: 1, when:"beforeChildren"} }
 } 
 
 export const imageVariant = {
   hidden: { scale: 0 },
-  visible: { scale: 1, transition: { duration: 0.3} }
+  visible: { scale: 1, transition: { duration: 1} }
 }

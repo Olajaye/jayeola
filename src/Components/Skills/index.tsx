@@ -38,7 +38,7 @@ const Skills = (props: Props) => {
             ))}
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             variants={ParentVariant}
             className="flex flex-row justify-around flex-wrap mt-4 gap-8 items-center px-10">
             {Other_skill.map((image) => (
@@ -47,7 +47,7 @@ const Skills = (props: Props) => {
                 src={image.Image}
               />
             ))}
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>

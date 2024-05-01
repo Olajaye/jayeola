@@ -21,6 +21,7 @@ import MICROSOFT from "@/assets/microsoft.avif"
 import FITNESS from "@/assets/FitnessImage.png"
 import NUPAT from "@/assets/nupat.png"
 import JAYNETWORK from "@/assets/JAYNETWORK.png"
+import BOOTSTRAP from "@/assets/Bootstrap_logo.svg.png"
 
 
 export const Frontend_data = [
@@ -35,6 +36,10 @@ export const Frontend_data = [
   {
     skill_name: "Framer Motion",
     Image: FRAMER,
+  },
+   {
+    skill_name: "Bootstrap",
+    Image: BOOTSTRAP,
   },
   {
     skill_name: "Tailwind Css",
@@ -96,10 +101,6 @@ export const Backend_skill = [
     skill_name: "My SQL",
     Image: MYSQL,
   },
-]
-
-
-export const Other_skill = [
   {
     skill_name: "Go",
     Image: GITHUB,
@@ -114,6 +115,23 @@ export const Other_skill = [
     Image: FIGMA,
  },
 ]
+
+
+// export const Other_skill = [
+//   {
+//     skill_name: "Go",
+//     Image: GITHUB,
+//   },
+
+//   {
+//     skill_name: "React Native",
+//     Image: REACTNATIVE,
+//   },
+//   {
+//     skill_name: "Figma",
+//     Image: FIGMA,
+//  },
+// ]
 
 
 export const Project = [
