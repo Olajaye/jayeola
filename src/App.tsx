@@ -7,10 +7,8 @@ import Contact from "@/Components/Contact"
 import Footer from "@/Components/Footer"
 
 function App() {
- 
-
   return (
-    <section className="bg-dark">
+    <section className="bg-dark mainapp w-[100%]" >
       <Navbar />
       <Header />
       <About/>

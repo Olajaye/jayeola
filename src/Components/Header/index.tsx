@@ -5,36 +5,35 @@ import GITHUB from "@/assets/gitHub.png"
 import WHATAPP from "@/assets/whatsapp.png"
 import TWITTER from "@/assets/twitter.webp"
 import { SparklesIcon } from "@heroicons/react/24/solid"
-import {slideInFromRight} from "@/utils/motion"
-
+import { slideInFromRight } from "@/utils/motion"
+import {ParentVariant} from "@/utils/motion"
 
 type Props = {}
 
 const Header = (props: Props) => {
   return (
     <header id="home"
-      className="sm:grid sm:grid-cols-2 items-center gap-16 px-10 pt-28 pb-10 ">
-      <motion.div
-        initial={{ scale: 0, rotateZ:-180 }}
-        animate={{scale:1, rotateZ:0 , transition:{duration:2}}}
-        className="flex justify-around">
-        <div className="w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] overflow-hidden bg-darg shadow-inner shadow-green rounded-full p-2 mb-10">
+      className="sm:grid sm:grid-cols-2 items-center px-10 pt-28 md:pt-40 md:pb-24 pb-10 ">
+      <div className="flex justify-around">
+        <motion.div
+          initial={{scale:0, opacity:0 }}
+          whileInView={{scale:1,opacity:1, transition:{duration:2}}}
+          className="w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] overflow-hidden bg-darg shadow-inner shadow-green rounded-full p-2 mb-10"
+        >
           <img className="w-[600px] rounded-full object-right-bottom" src={IMAGE2} alt="profile pix"/>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
 
 
 
-
+      {/* Home Text */}
       <motion.div
-        initial={{ x: "100vw" }}
-        animate={{x:0 ,transition:{duration:2}}}
+        variants={ParentVariant}
+        initial="hidden"
+        whileInView="visible"
         className="flex flex-col gap-5 text-start ps-3">
-          
         <motion.div
           variants={slideInFromRight(0.5)}
-          initial="hidden"
-          animate="visible"
           className="flex py-[6px] px-[7px] border border-green opacity-[0.9] rounded-2xl w-[250px]">
           <SparklesIcon className="text-[#FFD700] mr-[10px] h-5 w-5" />
           <h1 className="text-[13px] text-green tracking-widest">
@@ -44,8 +43,6 @@ const Header = (props: Props) => {
 
         <motion.div
           variants={slideInFromRight(1)}
-          initial="hidden"
-          animate="visible"
           className="flex flex-col gap-6 mt-4 text-5xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
@@ -60,8 +57,6 @@ const Header = (props: Props) => {
 
         <motion.p
           variants={slideInFromRight(1.5)}
-          initial="hidden"
-          animate="visible"
           className="text-lg text-gray-400 my-5 max-w-[600px] italic"
         >
           I&apos;m Jayeola Gbolahan a Frontend Software Engineer with experience in Website,
@@ -69,14 +64,13 @@ const Header = (props: Props) => {
         </motion.p>
         <motion.a
           variants={slideInFromRight(2)}
-          initial="hidden"
-          animate="visible"
           className="py-2 text-center bg-cyan-900 text-white font-extrabold cursor-pointer rounded-lg max-w-[200px]"
         >
           RESUME
         </motion.a>
       </motion.div>
 
+      {/* Find me links */}
       <div className="pt-8 sm:pt-0">
         <h1 className="text-green font-extrabold text-xl">FIND ME AT</h1>
 

@@ -13,5 +13,12 @@ body,
 .app {
   height: 100%;
   width: 100%;
+
+}
+
+.mainapp{
+  width: 100%;
+  overflow-x: hidden;
+
 }
 
