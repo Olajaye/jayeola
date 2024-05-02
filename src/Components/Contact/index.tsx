@@ -3,13 +3,34 @@ import ContactUs from "@/Components/Svgs/ContactUs"
 import { motion } from "framer-motion"
 import { ParentVariant, slideInFromLeft, slideInFromRight } from "@/utils/motion"
 import { SparklesIcon } from '@heroicons/react/24/solid'
+import emailjs from '@emailjs/browser';
+import { useRef } from "react"
 
-type Props = {}
+type Props = {
+  alertHandler: (open:boolean,message:string,color:boolean)=>void
+}
  
-const Contact = (props: Props) => {
+const Contact = ({alertHandler}:Props) => {
+   const form = useRef();
+  const sendEmail = (e:any) => {
+    e.preventDefault();
+    emailjs.sendForm('service_f9mn16i', 'template_ruh52zl', form.current, {publicKey: 't_pIAxg9QfhpiYJc5'})
+      .then(
+        () => {
+          alertHandler(true, `Thanks Gbolahan`,true )
+          // console.log('SUCCESS!');
+        },
+        (error) => {
+          alertHandler(true, `Failed`,false )
+          // console.log('FAILED...', error.text);
+        },
+    );
+    
+    e.target.reset()
+  };
   return (
+    <>
     <section className='px-10 mt-5 pt-20 sm:pt-16 md:pt-28 md:pb-28' id="contact">
-
       <motion.div
         variants={slideInFromLeft(0.1)}
         initial="hidden"
@@ -21,12 +42,20 @@ const Contact = (props: Props) => {
         </h1>
       </motion.div>
       <div className='py-10 grid grid-cols-1 sm:grid-cols-2'>
-        <div className='p-2 flex justify-around place-content-center'>
+        <motion.div
+          initial={{ y: 50 }}
+          animate={{
+            y: -10, transition: {
+              duration: 3,
+              repeat: Infinity,
+              repeatType:"reverse"
+          }}}
+          className='p-2 flex justify-around place-content-center'>
           <ContactUs />
-        </div>
-
+        </motion.div>
         <div className='p-2 mt-6 pt-20 sm:pt-0 sm:mt-0 place-content-center'>
           <motion.form
+            ref={form} onSubmit={sendEmail}
             variants={ParentVariant}
             initial="hidden"
             whileInView="visible"
@@ -34,15 +63,40 @@ const Contact = (props: Props) => {
 
             <motion.input
               variants={slideInFromRight(0.2)}
-              type="text" id='name' placeholder='Name' className='w-[100%] sm:w-[70%]  bg-[rgb(0,0,0,0.4)]  border-green border-b-2 rounded-t-md  outline-0 px-2 pt-2 text-white text-xl ' />
+              type="text"
+              name="user_name"
+              placeholder='Name'
+              required
+              className='w-[100%] sm:w-[70%]  bg-[rgb(0,0,0,0.4)]  border-green border-b-2 rounded-t-md  outline-0 px-2 pt-2 text-white text-xl '
+            />
         
             <motion.input
               variants={slideInFromLeft(0.4)}
-              type="email" id='email' placeholder='E-mail' className='w-[100%] sm:w-[70%]  bg-[rgb(0,0,0,0.4)]  border-green border-b-2 rounded-t-md outline-0 px-2 pt-2 text-white text-xl my-7' />
+              type="email"
+              name="user_email"
+              placeholder='E-mail'
+              required
+              className='w-[100%] sm:w-[70%]  bg-[rgb(0,0,0,0.4)]  border-green border-b-2 rounded-t-md outline-0 px-2 pt-2 text-white text-xl my-7'
+            />
           
             <motion.input
               variants={slideInFromRight(0.6)}
-              name="textcontent" id="textcontent" placeholder='Text' className='w-[100%] sm:w-[70%]  bg-[rgb(0,0,0,0.4)]  border-green border-b-2 rounded-t-md  outline-0 px-2 pt-2 text-white text-xl' />
+              name="sebject"
+              required
+              placeholder='Subject'
+              className='w-[100%] sm:w-[70%]  bg-[rgb(0,0,0,0.4)]  border-green border-b-2 rounded-t-md  outline-0 px-2 pt-2 text-white text-xl'
+            />
+            
+
+            <motion.textarea
+              variants={slideInFromRight(0.6)}
+              name="message"
+              required
+              placeholder='Message'
+              className='w-[100%] sm:w-[70%]  bg-[rgb(0,0,0,0.4)]  border-green border-b-2 rounded-t-md  outline-0 px-2 pt-2 mt-7 text-white text-xl'
+              cols={30}
+              rows={4}
+            />
             
             
             <motion.div
@@ -53,8 +107,8 @@ const Contact = (props: Props) => {
           </motion.form>
         </div>
       </div>
-    </section>
-    
+      </section>
+    </>
   )
 }
 
