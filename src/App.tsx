@@ -6,7 +6,7 @@ import Projects from "@/Components/Projects"
 import Contact from "@/Components/Contact"
 import Footer from "@/Components/Footer"
 import Alert from "@/Components/Alert"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 
 

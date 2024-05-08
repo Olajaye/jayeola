@@ -22,6 +22,7 @@ import FITNESS from "@/assets/FitnessImage.png"
 import NUPAT from "@/assets/nupat.png"
 import JAYNETWORK from "@/assets/JAYNETWORK.png"
 import BOOTSTRAP from "@/assets/Bootstrap_logo.svg.png"
+import OUNJEEKO from "@/assets/OunjeEko.png"
 
 
 export const Frontend_data = [
@@ -158,10 +159,17 @@ export const Project = [
   },
   
   {
-    Title: "NUPTE_TECNOLOGY",
+    Title: "NUPAT Academy",
     icon: NUPAT,
     img: NUPAT,
     Description: "NUPAT Academic serves as a valuable resource for students, educators, researchers, and self thought learners. It offers a vast repository of educational materials, including textbooks, articles, lecture notes, and multimedia resources, which can be accessed anytime, anywhere, fostering continuous learning beyond traditional classroom settings. Moreover, NUPAT academic websites often provide tools and platforms for collaboration and communication among peers and mentors. Enabling users to stay abreast of the latest developments in their fields of interest. This access to cutting-edge research fosters critical thinking, innovation, and evidence-based decision-making. Furthermore, NUPAT academic also offer supplementary resources such as study guides, practice exams, and tutoring services, catering to diverse learning needs and styles. These resources support students in their academic endeavors, helping them excel in their coursework and examinations.",
     link: "https://olajaye.github.io/Tech-Academy/"
-   }
+  },
+  {
+    Title: "Ounje-Eko",
+    icon: OUNJEEKO,
+    img: OUNJEEKO,
+    Description: "Ounje-Eko is a food shopping website that functions as a marketplace, offering customers accessibility, simple use, and an extensive range of items. It allows customers to explore, compare, and buy products from the comfort of their homes, bypassing regional restrictions. It improves the whole buying experience with safe payment methods and effective delivery services. It also helps businesses access a wider audience, and implement more focused marketing campaigns. Additionally, Ounje-Eko features an admin dashboard that makes data analysis easier and provides insights into customer behavior and preferences, which helps with making decisions. Here is the admin Link ----https://ounjeeko-admin.vercel.app----",
+    link: "https://ounjeeko.vercel.app"
+   },
 ]

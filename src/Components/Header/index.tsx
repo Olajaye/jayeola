@@ -65,6 +65,8 @@ const Header = (props: Props) => {
         <motion.a
           variants={slideInFromRight(2)}
           className="py-2 text-center bg-cyan-900 text-white font-extrabold cursor-pointer rounded-lg max-w-[200px]"
+          href="#"
+          download="Jayeola_Gbolahan-CV.pdf"
         >
           RESUME
         </motion.a>
