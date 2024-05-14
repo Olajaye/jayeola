@@ -63,10 +63,10 @@ export const Frontend_data = [
     skill_name: "Redux",
     Image: REDUX,
   },
-  {
-    skill_name: "React Query",
-    Image: REACTQUERY,
-  },
+  // {
+  //   skill_name: "React Query",
+  //   Image: REACTQUERY,
+  // },
   {
     skill_name: "Type Script",
     Image: TYPESCRIPT,
@@ -136,20 +136,7 @@ export const Backend_skill = [
 
 
 export const Project = [
-  {
-    Title: "Microsoft_Clone",
-    icon: MICROSOFT,
-    img: MICROSOFT,
-    Description: "",
-    link: "https://olajaye.github.io/Microsoft/"
-  },
-  {
-    Title: "Jaye.Network",
-    icon: JAYNETWORK,
-    img: JAYNETWORK,
-    Description: "",
-    link: "https://jayso-network.vercel.app/"
-  },
+  
   {
     Title: "Fitness Place",
     icon: FITNESS,
@@ -172,4 +159,18 @@ export const Project = [
     Description: "Ounje-Eko is a food shopping website that functions as a marketplace, offering customers accessibility, simple use, and an extensive range of items. It allows customers to explore, compare, and buy products from the comfort of their homes, bypassing regional restrictions. It improves the whole buying experience with safe payment methods and effective delivery services. It also helps businesses access a wider audience, and implement more focused marketing campaigns. Additionally, Ounje-Eko features an admin dashboard that makes data analysis easier and provides insights into customer behavior and preferences, which helps with making decisions. Here is the admin Link ----https://ounjeeko-admin.vercel.app----",
     link: "https://ounjeeko.vercel.app"
    },
+   {
+    Title: "Microsoft_Clone",
+    icon: MICROSOFT,
+    img: MICROSOFT,
+    Description: "",
+    link: "https://olajaye.github.io/Microsoft/"
+  },
+  {
+    Title: "Jaye.Network",
+    icon: JAYNETWORK,
+    img: JAYNETWORK,
+    Description: "",
+    link: "https://jayso-network.vercel.app/"
+  },
 ]

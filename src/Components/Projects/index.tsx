@@ -13,12 +13,14 @@ const Projects = (props: Props) => {
   const [content, setContent] = useState([Project[0]])
 
 
-  const handleProject = (id: any) => {
+  const handleProject = (id: string) => {
     const newProject = Project.filter(project => {
       return project.Title === id
     })
     setContent(newProject)
   }
+
+  
   return (
     
     <section className='bg-black mt-5 pt-10 md:pt-20 md:pb-28' id='myproject'>
