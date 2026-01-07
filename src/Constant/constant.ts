@@ -22,7 +22,7 @@ import GITHUB from "@/assets/gitHub.png"
 import MICROSOFT from "@/assets/microsoft.avif"
 import FITNESS from "@/assets/FitnessImage.png"
 import NUPAT from "@/assets/nupat.png"
-import JAYNETWORK from "@/assets/JAYNETWORK.png"
+import EYRIE from '@/assets/eyrie.png'
 import BOOTSTRAP from "@/assets/Bootstrap_logo.svg.png"
 import OUNJEEKO from "@/assets/OunjeEko.png"
 import UBUNTU from '@/assets/ubuntu-linux.avif'
@@ -230,7 +230,7 @@ export interface ProjectType {
 
 export const Project: ProjectType[] = [
   {
-    Title: "Meet To Aspire",
+    Title: "MEET TO ASPIRE",
     icon: MEETTOASPIRE,
     img: MEETTOASPIRE,
     Description: "Meet to Aspire is a professional networking and mentorship platform designed to connect aspiring professionals with experienced mentors through structured, interactive sessions. the platform facilitates knowledge exchange, skill development, and career growth via seamless digital interactions. Meet To Aspire platform moves beyond traditional networking by offering structured, interactive, and goal-oriented sessions. This ensures every meeting is productive, focusing on knowledge exchange, practical skill development, and strategic career planning. It facilitate not just connections, but transformative professional relationships. Meet to Aspire emphasizes scalability, security, and user experience, supporting both web and mobile access. MOBILE APP IS IN PROGRESS",
@@ -264,6 +264,26 @@ export const Project: ProjectType[] = [
       "AI Voice Interview",
       "Results & Ranking",
       "Dashboard & Analytics",
+    ],
+    year: "2024",
+    type: "Web Application",
+    category: "Full-Stack",
+    role: "Frontend Developer",
+    status: "Completed",
+  },
+    {
+    Title: "EYRIE AND OBRA",
+    icon: EYRIE,
+    img: EYRIE,
+    Description: "Eyrienobra is a global property search and investment web application designed to be an entry point for exploring, renting, and owning real estate across various categories and budgets. Eyrienobra is the Ultimate Gateway to affordable dream destinations. Its primary goal is to connect users with properties worldwide, catering to residential, commercial, hospitality, and travel needs. The overarching mission is to help users Unlock Boundless Opportunities in the global real estate market, facilitating exploration, investment, rental, and ownership.",
+    link: "https://eyrienobra.vercel.app/",
+    techStack: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Next-JS", "Nest-JS", "PostgreSql"],
+    features: [
+      "Search & Filter By location, price, type (residential, commercial, etc.), size, bedrooms/bathrooms.",
+      "Property Detail Page: Shows price, address, full descriptions, high-resolution photo galleries, virtual tours, and amenities",
+      "Facilitates professional connections for secure transactions.",
+      "Payment and Loan management",
+      "Provides personalized management tools for users and agents.",
     ],
     year: "2024",
     type: "Web Application",

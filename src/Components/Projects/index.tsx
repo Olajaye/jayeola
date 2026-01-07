@@ -195,11 +195,14 @@ const Projects = () => {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden border border-gray-700/50 shadow-2xl shadow-cyan-500/10">
                   <div className="aspect-video relative overflow-hidden">
+                    
                     <img
                       src={Project[activeProject].img}
                       alt={Project[activeProject].Title}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     />
+                      
+            
                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-transparent" />
                     
                     {/* Tech Stack Badges */}
@@ -340,13 +343,13 @@ const Projects = () => {
           </div>
           <div className="text-center p-6 rounded-2xl bg-gradient-to-b from-gray-900/30 to-gray-800/20 border border-gray-700/30 backdrop-blur-sm">
             <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent mb-2">
-              50+
+              30+
             </div>
             <div className="text-sm text-gray-400">Technologies Used</div>
           </div>
           <div className="text-center p-6 rounded-2xl bg-gradient-to-b from-gray-900/30 to-gray-800/20 border border-gray-700/30 backdrop-blur-sm">
             <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent mb-2">
-              100%
+              80%
             </div>
             <div className="text-sm text-gray-400">Client Satisfaction</div>
           </div>
