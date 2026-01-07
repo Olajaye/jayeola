@@ -21,9 +21,9 @@ const Navbar = (props: Props) => {
       <div className="hidden basis-[75%] sm:flex justify-between items-center">
         <ul className='text-white flex justify-between border-2 border-green rounded-full px-3 basis-[60%]'>
           <AnchorLink offset='200' href="#home" className="hover:text-green cursor-pointer">Home</AnchorLink>
-          <AnchorLink href="#aboutme" className="hover:text-green cursor-pointer">About Me</AnchorLink>
-          <AnchorLink href="#myskills" className="hover:text-green cursor-pointer">My Skils</AnchorLink>
-          <AnchorLink href="#myproject" className="hover:text-green cursor-pointer">My projects</AnchorLink>
+          <AnchorLink href="#about" className="hover:text-green cursor-pointer">About Me</AnchorLink>
+          <AnchorLink href="#skills" className="hover:text-green cursor-pointer">My Skils</AnchorLink>
+          <AnchorLink href="#projects" className="hover:text-green cursor-pointer">My projects</AnchorLink>
         </ul>
 
         <AnchorLink href="#contact">
@@ -75,9 +75,9 @@ const Navbar = (props: Props) => {
               <div className="flex justify-center items-center flex-col">
                 <ul className="flex flex-col items-center text-xl font-bold">
                   <AnchorLink href="#home" className="cursor-pointer mt-4" onClick={()=>setIsMenuOpen(false)}>Home</AnchorLink>
-                  <AnchorLink href="#aboutme" className="cursor-pointer mt-4" onClick={()=>setIsMenuOpen(false)}>About Me</AnchorLink>
-                  <AnchorLink href="#myskills" className="cursor-pointer mt-4" onClick={()=>setIsMenuOpen(false)}>My Skils</AnchorLink>
-                  <AnchorLink href="#myproject" className="cursor-pointer mt-4" onClick={()=>setIsMenuOpen(false)}>My projects</AnchorLink>
+                  <AnchorLink href="#about" className="cursor-pointer mt-4" onClick={()=>setIsMenuOpen(false)}>About Me</AnchorLink>
+                  <AnchorLink href="#skills" className="cursor-pointer mt-4" onClick={()=>setIsMenuOpen(false)}>My Skils</AnchorLink>
+                  <AnchorLink href="#projects" className="cursor-pointer mt-4" onClick={()=>setIsMenuOpen(false)}>My projects</AnchorLink>
                 </ul>
 
                 <AnchorLink href="#contact" onClick={()=>setIsMenuOpen(false)} className='bg-dark text-green w-[50%] text-center text-xl font-bold rounded-lg p-1 mb-2 mt-6'>Hire Me

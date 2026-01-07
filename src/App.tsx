@@ -22,7 +22,6 @@ function App() {
     setAlertText(message)
     setAlertColor(color)
     setTimeout(() => {
-      console.log("back")
       setAlertOpne(false)
     }, 3000)
   }
