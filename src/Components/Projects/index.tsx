@@ -357,7 +357,25 @@ const Projects = () => {
             <div className="text-sm text-gray-400">Code Quality</div>
           </div>
         </motion.div>
+
+
+  
+        <motion.h2
+          className="mt-4 text-cyan-200 text-center max-w-3xl mx-auto"
+          initial={{ opacity: 0.3, scale: 0.95 }}
+          animate={{ opacity: 1,  scale: [1, 1.03, 1] }}
+          transition={{
+            duration: 2,
+            ease: "easeInOut",
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
+        >
+          Note: The above are selected projects from my portfolio, managed by me, and not subject to any NDA.
+        </motion.h2>
       </div>
+
+      
     </section>
   )
 }

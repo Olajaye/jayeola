@@ -212,7 +212,7 @@ const Skills = () => {
                             />
                           </div>
                           
-                          <span className="text-xs text-center text-gray-400 group-hover:text-cyan-300 transition-colors duration-300 font-medium">
+                          <span className="text-lg hidden sm:block text-center text-gray-400 group-hover:text-cyan-300 transition-colors duration-300 font-medium">
                             {skill.skill_name}
                           </span>
                           
@@ -220,7 +220,7 @@ const Skills = () => {
                           <div className="absolute bottom-2 left-2 right-2 h-1 rounded-full bg-gray-800 overflow-hidden">
                             <motion.div
                               initial={{ width: 0 }}
-                              whileInView={{ width: `${skill.proficiency || 80}%` }}
+                              whileInView={{ width: `${skill.proficiency || 90}%` }}
                               viewport={{ once: true }}
                               transition={{ duration: 1, delay: skillIndex * 0.05 }}
                               className={`h-full bg-gradient-to-r ${category.gradient}`}
@@ -281,6 +281,8 @@ const Skills = () => {
         >
           <div className="w-full h-full border-2 border-dashed border-cyan-500 rounded-full" />
         </motion.div>
+
+        
       </div>
     </section>
   )

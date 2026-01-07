@@ -178,7 +178,7 @@ const Footer = () => {
   };
 
   const renderSection = (title: string, links: LinkItem[]) => (
-    <div className="min-w-[200px] h-auto flex flex-col items-center sm:items-start">
+    <div className="min-w-[200px] h-auto flex flex-col items-start">
       <h3 className="font-bold text-[16px] text-green mb-4">{title}</h3>
       <div className="flex flex-col">
         {links.map((link, index) => renderLinkItem(link, index))}
@@ -190,7 +190,7 @@ const Footer = () => {
     <footer className="bg-black border-t border-cyan-200">
       <div className="container mx-auto px-4 py-4 sm:py-6">
         <div className="w-full flex flex-col items-center">
-          <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 justify-items-center lg:justify-items-start">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 justify-items-start">
             {renderSection('Community', communityLinks)}
             {renderSection('Social Media', socialLinks)}
             {renderSection('About', aboutLinks)}

@@ -70,7 +70,7 @@ const Contact = ({ alertHandler }: Props) => {
   };
 
   return (
-    <section className='px-10 mt-5 pt-20 sm:pt-16 md:pt-28 md:pb-28' id="contact">
+    <section className='px-10 mt-5 py-8' id="contact">
       <motion.div
         variants={slideInFromLeft(0.1)}
         initial="hidden"
